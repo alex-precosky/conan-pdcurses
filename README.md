@@ -4,6 +4,8 @@
 |:--------:|:---------:|:-----------------:|
 |BINTRAY_BADGE_URL|APPVEYOR_BADGE_URL|TRAVIS_BADGE_URL|
 
+[![Build Status](https://travis-ci.org/alex-precosky/conan-pdcurses.svg?branch=testing%2F3.6)](https://travis-ci.org/alex-precosky/conan-pdcurses)
+
 ## Conan.io Information
 
 Bincrafters packages can be found in the following public Conan repository:
