@@ -2,8 +2,7 @@
 
 | Bintray | Windows | Linux & macOS |
 |:--------:|:---------:|:-----------------:|
-|BINTRAY_BADGE_URL|[![Build status](https://ci.appveyor.com/api/projects/status/t64hdrj5n8v2wj18/branch/testing/3.6?svg=true)](https://ci.appveyor.com/project/alex-precosky/conan-pdcurses/branch/testing/3.6)
-|[![Build Status](https://travis-ci.org/alex-precosky/conan-pdcurses.svg?branch=testing%2F3.6)](https://travis-ci.org/alex-precosky/conan-pdcurses)|
+|BINTRAY_BADGE_URL|[![Build status](https://ci.appveyor.com/api/projects/status/t64hdrj5n8v2wj18/branch/testing/3.6?svg=true)](https://ci.appveyor.com/project/alex-precosky/conan-pdcurses/branch/testing/3.6)|Not Supported|
 
 
 

@@ -9,7 +9,7 @@ class PDCursesConan(ConanFile):
     name = "pdcurses"
     version = "3.6"
     description = "Public Domain Curses - a curses library for environments that don't fit the termcap/terminfo model. "
-    url = "https://github.com/bincrafters/conan-libname"
+    url = "https://github.com/alex-precosky/conan-pdcurses"
     homepage = "https://github.com/wmcbrine/PDCurses"
     # Indicates License type of the packaged library
     license = "Public Domain"
@@ -38,10 +38,13 @@ class PDCursesConan(ConanFile):
         if self.settings.os == 'Windows':
             del self.options.fPIC
 
+        if self.settings.os not in ['Windows']:
+            raise Exception("Unsupported System. This package currently only supports Windows. Unix-like OSs already support libcurses")
+
     def source(self):
         source_url = "https://github.com/wmcbrine/PDCurses"
         tools.get("{0}/archive/{1}.tar.gz".format(source_url, self.version))
-        extracted_dir = self.name + "-" + self.version
+        extracted_dir = "PDCurses" + "-" + self.version
 
         #Rename to "source_subfolder" is a convention to simplify later steps
         os.rename(extracted_dir, self.source_subfolder)
@@ -57,6 +60,7 @@ class PDCursesConan(ConanFile):
     def build(self):
         if self.settings.compiler == 'Visual Studio':
             self.build_nmake()
+        
 
     def package(self):
 
