@@ -4,7 +4,42 @@
 |:--------:|:---------:|:-----------------:|
 |[ ![Download](https://api.bintray.com/packages/alexwarrior-org/alexwarrior-conan/pdcurses%3Aalex-precosky/images/download.svg) ](https://bintray.com/alexwarrior-org/alexwarrior-conan/pdcurses%3Aalex-precosky/_latestVersion)|[![Build status](https://ci.appveyor.com/api/projects/status/t64hdrj5n8v2wj18/branch/testing/3.6?svg=true)](https://ci.appveyor.com/project/alex-precosky/conan-pdcurses/branch/testing/3.6)|Not Supported|
 
+[Conan.io](https://conan.io) package recipe for [*PDCurses*](https://pdcurses.sourceforge.io)
 
+PDCurses is a public domain curses library.  This recipe allows easy inclusion of it into C++ projects on Windows.
+
+## Using this Package
+
+This assumes conan is present, and that CMake is used in your project.
+
+The bintray remote containing the binary must be added as:
+
+    $ conan remote add alexwarrior-conan https://api.bintray.com/conan/alexwarrior-org/alexwarrior-conan
+
+
+In your project directory, include the following in a *conanfile.txt*
+
+    [requires]
+    pdcurses/3.6@alex-precosky/stable
+
+Then to download the package to the local conan cache, assuming a nested build folder using likely CMake:
+
+    $ mkdir build
+    & cd build
+    & conan install ..
+
+Then to make the package available, in your project source code directory's *CMakeLists.txt*, include
+
+    include(${CMAKE_BINARY_DIR}/conanbuildinfo.cmake)
+    conan_basic_setup()
+    ...
+    target_link_libraries(PdCursesUsingProject ${CONAN_LIBS})
+
+## Maintaining this package
+
+To upload a binary:
+
+    $ conan upload pdcurses/3.6@alex-precosky/stable --all -r alexwarrior-conan
 
 ## Conan.io Information
 
@@ -38,10 +73,5 @@ The contents of this GIT repository are completely separate from the software be
 
 ### License(s) for packaged software:
 
-    ~/.conan/data/<pkg_name>/<pkg_version>/bincrafters/package/<random_package_id>/license/<LICENSE_FILES_HERE>
+  The packaged software is Public Domain.
 
-*Note :   The most common filenames for OSS licenses are `LICENSE` AND `COPYING` without file extensions.*
-
-### License for Bincrafters recipe:
-
-    ~/.conan/data/<pkg_name>/<pkg_version>/bincrafters/export/LICENSE.md
