@@ -2,7 +2,7 @@
 
 | Bintray | Windows | Linux & macOS |
 |:--------:|:---------:|:-----------------:|
-|BINTRAY_BADGE_URL|[![Build status](https://ci.appveyor.com/api/projects/status/t64hdrj5n8v2wj18/branch/testing/3.6?svg=true)](https://ci.appveyor.com/project/alex-precosky/conan-pdcurses/branch/testing/3.6)|Not Supported|
+|[ ![Download](https://api.bintray.com/packages/alexwarrior-org/alexwarrior-conan/pdcurses%3Aalex-precosky/images/download.svg) ](https://bintray.com/alexwarrior-org/alexwarrior-conan/pdcurses%3Aalex-precosky/_latestVersion)|[![Build status](https://ci.appveyor.com/api/projects/status/t64hdrj5n8v2wj18/branch/testing/3.6?svg=true)](https://ci.appveyor.com/project/alex-precosky/conan-pdcurses/branch/testing/3.6)|Not Supported|
 
 
 
