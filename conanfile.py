@@ -11,7 +11,6 @@ class PDCursesConan(ConanFile):
     description = "Public Domain Curses - a curses library for environments that don't fit the termcap/terminfo model. "
     url = "https://github.com/bincrafters/conan-libname"
     homepage = "https://github.com/wmcbrine/PDCurses"
-    author = "Bincrafters <someone@gmail.com>"
     # Indicates License type of the packaged library
     license = "Public Domain"
 
