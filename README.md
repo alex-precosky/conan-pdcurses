@@ -37,7 +37,12 @@ Then to make the package available, in your project source code directory's *CMa
 
 ## Maintaining this package
 
-To upload a binary:
+To build a package:
+    $ conan create . -s arch=x86 pdcurses/3.6@alex-precosky/stable
+    
+    $ conan create . -s arch=x86_64 pdcurses/3.6@alex-precosky/stable
+
+To upload a binary (both x86 and x86_64 if both present):
 
     $ conan upload pdcurses/3.6@alex-precosky/stable --all -r alexwarrior-conan
 
