@@ -38,6 +38,7 @@ Then to make the package available, in your project source code directory's *CMa
 ## Maintaining this package
 
 To build a package:
+
     $ conan create . -s arch=x86 pdcurses/3.6@alex-precosky/stable
     
     $ conan create . -s arch=x86_64 pdcurses/3.6@alex-precosky/stable
