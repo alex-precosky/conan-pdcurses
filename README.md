@@ -2,7 +2,7 @@
 
 | Bintray | Windows | Linux & macOS |
 |:--------:|:---------:|:-----------------:|
-|[ ![Download](https://api.bintray.com/packages/alexwarrior-org/alexwarrior-conan/pdcurses%3Aalex-precosky/images/download.svg) ](https://bintray.com/alexwarrior-org/alexwarrior-conan/pdcurses%3Aalex-precosky/_latestVersion)|[![Build status](https://ci.appveyor.com/api/projects/status/t64hdrj5n8v2wj18/branch/stable/3.6?svg=true)](https://ci.appveyor.com/project/alex-precosky/conan-pdcurses/branch/stable/3.6)|Not Supported|
+|[ ![Download](https://api.bintray.com/packages/alexwarrior-org/alexwarrior-conan/pdcurses%3Aalex-precosky/images/download.svg?version=3.6%3Atesting) ](https://bintray.com/alexwarrior-org/alexwarrior-conan/pdcurses%3Aalex-precosky/3.6%3Atesting/link)|[![Build status](https://ci.appveyor.com/api/projects/status/t64hdrj5n8v2wj18/branch/testing/3.6?svg=true)](https://ci.appveyor.com/project/alex-precosky/conan-pdcurses/branch/testing/3.6)|Not Supported|
 
 [Conan.io](https://conan.io) package recipe for [*PDCurses*](https://pdcurses.sourceforge.io)
 
@@ -38,6 +38,7 @@ Then to make the package available, in your project source code directory's *CMa
 ## Maintaining this package
 
 To build a package:
+
     $ conan create . -s arch=x86 pdcurses/3.6@alex-precosky/stable
     
     $ conan create . -s arch=x86_64 pdcurses/3.6@alex-precosky/stable
